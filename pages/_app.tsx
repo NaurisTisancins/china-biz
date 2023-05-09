@@ -1,5 +1,5 @@
 import '@/styles/globals.css';
-import '@/styles/NavigationBar.css';
+import '@/styles/components.css';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { ReactElement, ReactNode } from 'react';

@@ -7,10 +7,10 @@ type Props = {
 
 function MainLayout({ children }: Props): ReactElement {
   return (
-    <>
+    <div className="overflow-auto">
       <NavigationBar />
-      <main>{children}</main>
-    </>
+      <main className="main-layout-container">{children}</main>
+    </div>
   );
 }
 

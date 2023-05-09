@@ -1,12 +1,19 @@
 import { Inter } from 'next/font/google';
+import { ReactElement } from 'react';
 import type { NextPageWithLayout } from './_app';
 import MainLayout from '@/components/main-layout/MainLayout';
-import { ReactElement } from 'react';
+import HeroTitleSection from '@/components/home-page-components/HeroTitleSection';
+import ServicesSection from '@/components/home-page-components/ServicesSection';
 
 const inter = Inter({ subsets: ['latin'] });
 
 const HomePage: NextPageWithLayout = () => {
-  return <div>Hello from Home</div>;
+  return (
+    <div className="home-page-container">
+      <HeroTitleSection />
+      <ServicesSection />
+    </div>
+  );
 };
 
 HomePage.getLayout = function getLayout(page: ReactElement) {
