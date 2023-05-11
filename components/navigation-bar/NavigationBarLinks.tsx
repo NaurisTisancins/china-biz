@@ -19,8 +19,8 @@ function NavigationBarLinks() {
       <Link href="/">
         <div
           className={
-            'nav-link text-cyan-600 hover:text-amber-300 ' +
-            (selectedPath('/') ? 'text-amber-300' : '')
+            'nav-link hover:text-amber-300 ' +
+            (selectedPath('/') ? 'text-amber-300' : 'text-cyan-600')
           }
         >
           Home
@@ -29,8 +29,8 @@ function NavigationBarLinks() {
       <Link href="/about">
         <div
           className={
-            'nav-link text-cyan-600 hover:text-amber-300 ' +
-            (selectedPath('/about') ? 'text-amber-300' : '')
+            'nav-link hover:text-amber-300 ' +
+            (selectedPath('/about') ? 'text-amber-300' : 'text-cyan-600')
           }
         >
           About

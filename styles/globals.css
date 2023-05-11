@@ -14,8 +14,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600px;
-
+  min-height: 600px;
   padding: 0 16px;
 }
 
@@ -47,11 +46,12 @@
   cursor: pointer;
 }
 
-.services-container {
+.services-section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 500px;
+  min-height: 600px;
+  background-color: gainsboro;
 }
 
 .service-item {
@@ -70,10 +70,52 @@
   text-align: center;
 }
 
+.selected-clients-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.selected-clients-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.selected-clients-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 16px; */
+  width: 100%;
+}
+
+.selected-clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.selected-clients-item:hover {
+  background-color: rgb(226 232 240);
+}
+
+.main-container {
+  height: 100%;
+}
+
 .main-layout-container {
   display: flex;
   justify-content: center;
-  height: calc(100vh - 60px);
+  min-height: 100%;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -109,4 +151,11 @@
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+}
+
+.footer-container {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 0px;
+  background-color: red;
 }

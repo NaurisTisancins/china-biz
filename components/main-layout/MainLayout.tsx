@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import Footer from '../footer/Footer';
 import NavigationBar from '../navigation-bar/NavigationBar';
 
 type Props = {
@@ -7,10 +8,11 @@ type Props = {
 
 function MainLayout({ children }: Props): ReactElement {
   return (
-    <div className="overflow-auto">
+    <>
       <NavigationBar />
       <main className="main-layout-container">{children}</main>
-    </div>
+      <Footer />
+    </>
   );
 }
 

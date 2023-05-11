@@ -12,7 +12,7 @@ function HeroTitleSection() {
           （MLI）,
           各大投行，投资公司，医疗科技，互联网科技公司等，拥有业内认可及权威.
         </h2>
-        <CallToActionButton text="更多。。。" />
+        <CallToActionButton text="更多。。。" path="/about" />
       </div>
     </section>
   );

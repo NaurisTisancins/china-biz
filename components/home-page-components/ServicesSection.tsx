@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function ServicesSection() {
   return (
-    <section className="services-container">
+    <section className="services-section">
       <div className="service-item ">
         <Link href="/">
           <h2 className="service-title text-xl text-cyan-600 hover:text-amber-300">
