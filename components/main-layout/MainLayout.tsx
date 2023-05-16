@@ -10,7 +10,7 @@ function MainLayout({ children }: Props): ReactElement {
   return (
     <>
       <NavigationBar />
-      <main className="main-layout-container">{children}</main>
+      <main className="main-layout-container ">{children}</main>
       <Footer />
     </>
   );

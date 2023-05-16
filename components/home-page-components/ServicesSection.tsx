@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 function ServicesSection() {
   return (
-    <section className="services-section">
+    <section className="services-section ">
       <div className="service-item ">
-        <Link href="/">
+        <Link href="/education">
           <h2 className="service-title text-xl text-cyan-600 hover:text-amber-300">
             Education
           </h2>
@@ -16,9 +16,11 @@ function ServicesSection() {
         </p>
       </div>
       <div className="service-item ">
-        <h2 className="service-title text-xl text-cyan-600 hover:text-amber-300">
-          Consulting
-        </h2>
+        <Link href="/consulting">
+          <h2 className="service-title text-xl text-cyan-600 hover:text-amber-300">
+            Consulting
+          </h2>
+        </Link>
         <p className="service-text">
           Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed
           eiusmod tempor.

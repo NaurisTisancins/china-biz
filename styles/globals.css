@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: rgb(45, 45, 49);
+  background-color: rgb(241 245 249);
+}
+
+.secondary-title-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.secondary-title-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.paragraph {
+  margin-bottom: 24px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
 .home-page-container {
   display: flex;
   flex-direction: column;
@@ -11,11 +49,11 @@
 
 .hero-title-section {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
   min-height: 600px;
-  padding: 0 16px;
 }
 
 .home-page-title {
@@ -71,11 +109,6 @@
 }
 
 .selected-clients-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 300px;
 }
 
 .selected-clients-title {
@@ -158,4 +191,126 @@
   height: 60px;
   margin-bottom: 0px;
   background-color: red;
+}
+
+.about-page-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.about-thalesians-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 600px;
+  padding: 0 16px;
+}
+
+.about-thalesians-paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+
+.about-thalesians-img {
+  background: red;
+  width: 40%;
+  height: 50%;
+}
+
+.about-page-quote-section {
+}
+
+.quote-paragraph {
+  width: 60%;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.about-page-key-people-section {
+}
+
+.about-page-key-people-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.about-page-key-people-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.about-page-key-people-item {
+  width: 100%;
+  height: 100%;
+}
+
+.about-page-client-list-container {
+  height: 100%;
+  padding: 0 16px;
+  margin: 100px 0;
+}
+
+.about-page-client-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.about-page-client-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.education-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 16px;
+  /* margin: 150px 0; */
+}
+
+.education-page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.consulting-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 16px;
+  margin: 100px 0;
+}
+
+.consulting-intro-section {
+}
+
+.contact-us-section {
+  gap: 40px;
+}
+
+.consulting-areas-section {
 }

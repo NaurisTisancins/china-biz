@@ -36,15 +36,21 @@ function NavigationBarLinks() {
           About
         </div>
       </Link>
-      <div className="nav-link text-cyan-600 hover:text-amber-300">
-        Education
-      </div>
-      <div className="nav-link text-cyan-600 hover:text-amber-300">
-        Software
-      </div>
-      <div className="nav-link text-cyan-600 hover:text-amber-300">
-        Consulting
-      </div>
+      <Link href="/education">
+        <div className="nav-link text-cyan-600 hover:text-amber-300">
+          Education
+        </div>
+      </Link>
+      <Link href="/software">
+        <div className="nav-link text-cyan-600 hover:text-amber-300">
+          Software
+        </div>
+      </Link>
+      <Link href="/consulting">
+        <div className="nav-link text-cyan-600 hover:text-amber-300">
+          Consulting
+        </div>
+      </Link>
     </div>
   );
 }
