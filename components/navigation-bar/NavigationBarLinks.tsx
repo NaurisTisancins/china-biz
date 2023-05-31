@@ -5,10 +5,6 @@ import { usePathname } from 'next/navigation';
 function NavigationBarLinks() {
   const pathname = usePathname();
 
-  useEffect(() => {
-    console.log(pathname);
-  }, [pathname]);
-
   const selectedPath = (path: string): boolean => {
     console.log(pathname === path);
     return pathname === path;
@@ -23,7 +19,7 @@ function NavigationBarLinks() {
             (selectedPath('/') ? 'text-amber-300' : 'text-cyan-600')
           }
         >
-          Home
+          主页 (home)
         </div>
       </Link>
       <Link href="/about">
@@ -33,24 +29,39 @@ function NavigationBarLinks() {
             (selectedPath('/about') ? 'text-amber-300' : 'text-cyan-600')
           }
         >
-          About
+          关于 (about)
         </div>
       </Link>
-      <Link href="/education">
-        <div className="nav-link text-cyan-600 hover:text-amber-300">
-          Education
-        </div>
-      </Link>
-      <Link href="/software">
-        <div className="nav-link text-cyan-600 hover:text-amber-300">
-          Software
+      <Link href="/teaching">
+        <div
+          className={
+            'nav-link hover:text-amber-300 ' +
+            (selectedPath('/teaching') ? 'text-amber-300' : 'text-cyan-600')
+          }
+        >
+          教学 (teach)
         </div>
       </Link>
       <Link href="/consulting">
-        <div className="nav-link text-cyan-600 hover:text-amber-300">
-          Consulting
+        <div
+          className={
+            'nav-link hover:text-amber-300 ' +
+            (selectedPath('/consulting') ? 'text-amber-300' : 'text-cyan-600')
+          }
+        >
+          咨询 (consult)
         </div>
       </Link>
+      {/* <Link href="/software">
+        <div
+          className={
+            'nav-link hover:text-amber-300 ' +
+            (selectedPath('/') ? 'text-amber-300' : 'text-cyan-600')
+          }
+        >
+          Software
+        </div>
+      </Link> */}
     </div>
   );
 }

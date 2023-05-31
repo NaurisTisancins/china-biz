@@ -9,20 +9,32 @@ body {
   color: rgb(45, 45, 49);
   background-color: rgb(241 245 249);
 }
-
+/* need to change title to be on the left side */
 .secondary-title-1 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .secondary-title-2 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.secondary-title-2-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 24px;
@@ -37,6 +49,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   margin-bottom: 100px;
 }
 
@@ -90,6 +103,8 @@ body {
   justify-content: space-around;
   min-height: 600px;
   background-color: gainsboro;
+  width: 100%;
+  margin-bottom: 100px;
 }
 
 .service-item {
@@ -99,9 +114,17 @@ body {
   justify-content: center;
 }
 
+.service-icon-container {
+  width: 100%;
+  height: 100%;
+  
+}
+
 .service-title {
   cursor: pointer;
   margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .service-text {
@@ -130,11 +153,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
   background-color: white;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  margin: 62px 0;
 }
 
 .selected-clients-item:hover {
@@ -182,7 +208,7 @@ body {
 
 .nav-link {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -247,9 +273,22 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 24px;
+  width: 100%;
 }
 
 .about-page-key-people-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  height: 100%;
+  width: 100%;
+}
+.key-person-container {
+  width: 65%;
+  height: 100%;
+}
+.key-people-paragraph {
   width: 100%;
   height: 100%;
 }
@@ -276,7 +315,7 @@ body {
   gap: 24px;
 }
 
-.education-page-container {
+.teaching-page-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,7 +325,7 @@ body {
   /* margin: 150px 0; */
 }
 
-.education-page-title {
+.teaching-page-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,4 +352,23 @@ body {
 }
 
 .consulting-areas-section {
+}
+
+.unordered-list {
+  margin-bottom: 24px;
+  width: 100%;
+  padding: 0 16px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.list-item {
+  margin-bottom: 8px;
+}
+
+.person-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

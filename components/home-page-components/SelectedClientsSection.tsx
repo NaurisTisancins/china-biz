@@ -1,7 +1,7 @@
 function SelectedClientsSection() {
   return (
     <section className="selected-clients-section section-container">
-      <h2 className="selected-clients-title ">Selected Clients</h2>
+      <h2 className="secondary-title-1 ">我们的客户</h2>
       <div className="selected-clients-container">
         <div className="selected-clients-item">Bloomberg</div>
         <div className="selected-clients-item">BNP Paribas</div>

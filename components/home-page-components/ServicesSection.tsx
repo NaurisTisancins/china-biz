@@ -1,39 +1,38 @@
+import Image from 'next/image';
 import Link from 'next/link';
+
+import LaptopIcon from '../../public/icons/laptop-icon.svg';
+import Computer from '../icons/Computer';
 
 function ServicesSection() {
   return (
+    // add icons
     <section className="services-section ">
       <div className="service-item ">
-        <Link href="/education">
-          <h2 className="service-title text-xl text-cyan-600 hover:text-amber-300">
-            Education
+        <Link href="/teaching">
+          <h2 className="service-title text-cyan-600 hover:text-amber-300">
+            教学
           </h2>
         </Link>
 
-        <p className="service-text">
-          Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed
-          eiusmod tempor.
-        </p>
+        <p className="service-text">科技最新动态</p>
       </div>
       <div className="service-item ">
         <Link href="/consulting">
-          <h2 className="service-title text-xl text-cyan-600 hover:text-amber-300">
-            Consulting
+          <h2 className="service-title text-cyan-600 hover:text-amber-300">
+            咨询
           </h2>
         </Link>
-        <p className="service-text">
-          Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed
-          eiusmod tempor.
-        </p>
+        <p className="service-text">为行业领导者带来最先进的专业知识</p>
       </div>
       <div className="service-item ">
-        <h2 className="service-title text-xl text-cyan-600 hover:text-amber-300">
-          Software
+        <div className="service-icon-container"></div>
+        {/* <Image src={LaptopIcon} alt="laptop icon" width={50} height={50} /> */}
+        <Computer color="#0891B2" width="50px" height="50px" />
+        <h2 className="service-title text-cyan-600 hover:text-amber-300">
+          软件
         </h2>
-        <p className="service-text">
-          Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed
-          eiusmod tempor.
-        </p>
+        <p className="service-text">构建独特的软件解决方案</p>
       </div>
     </section>
   );
