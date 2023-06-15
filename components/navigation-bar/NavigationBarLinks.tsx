@@ -19,7 +19,7 @@ function NavigationBarLinks() {
             (selectedPath('/') ? 'text-amber-300' : 'text-cyan-600')
           }
         >
-          主页 (home)
+          主页 Home
         </div>
       </Link>
       <Link href="/about">
@@ -29,7 +29,7 @@ function NavigationBarLinks() {
             (selectedPath('/about') ? 'text-amber-300' : 'text-cyan-600')
           }
         >
-          关于 (about)
+          关于 About
         </div>
       </Link>
       <Link href="/teaching">
@@ -39,7 +39,7 @@ function NavigationBarLinks() {
             (selectedPath('/teaching') ? 'text-amber-300' : 'text-cyan-600')
           }
         >
-          教学 (teach)
+          教学 Teach
         </div>
       </Link>
       <Link href="/consulting">
@@ -49,7 +49,7 @@ function NavigationBarLinks() {
             (selectedPath('/consulting') ? 'text-amber-300' : 'text-cyan-600')
           }
         >
-          咨询 (consult)
+          咨询 Consult
         </div>
       </Link>
       {/* <Link href="/software">

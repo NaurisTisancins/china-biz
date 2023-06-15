@@ -4,7 +4,7 @@ import ThalesiansLogo from '../../public/Logo/thalesians-logo.png';
 function NavigationBarLogo() {
   return (
     <div className="nav-bar-logo-container">
-      <Image src={ThalesiansLogo} alt="company logo" width={50} height={50} />
+      <Image src={ThalesiansLogo} alt="company logo" width={90} height={90} />
     </div>
   );
 }

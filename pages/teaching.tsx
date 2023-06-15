@@ -9,7 +9,7 @@ import ContactUsSection from '@/components/common-components/ContactUsSection';
 const TeachingPage: NextPageWithLayout = () => {
   return (
     <main className="teaching-page-container">
-      <h1 className="teaching-page-title">教学</h1>
+      <h1 className="teaching-page-title">教学 Teaching</h1>
       <AdultTrainingSection />
       <PreUniTeachingSection />
       <ExecutiveCourses />

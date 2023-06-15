@@ -4,7 +4,7 @@ import PaulBilokonImage from '../../public/photos/image5.jpeg';
 function KeyPeopleSection() {
   return (
     <section className="about-page-key-people-section section-container">
-      <h2 className="secondary-title-1">Key People</h2>
+      <h2 className="secondary-title-1">关键人物 Key People</h2>
       <div className="about-page-key-people-container">
         <div className="about-page-key-people-item">
           <Image

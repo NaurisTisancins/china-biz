@@ -1,8 +1,8 @@
 function AdultTrainingSection() {
   return (
     <section>
-      <h2 className="secondary-title-2-left ">成人教学:</h2>
-      线上课程/证书培训:
+      <h2 className="secondary-title-2-left ">成人教学: Professional Study</h2>
+      线上课程/证书培训: Online Courses/Certificate Training
       <ul>
         <li>
           <h3 className="font-bold">
@@ -19,7 +19,7 @@ function AdultTrainingSection() {
           本课程的目标是培养金融量化开发人员的基本技能。该课程属于入门级，不需要编程经验。该课程由具有衍生品定价和系统交易模型开发经验的量化金融从业者设计。
         </li>
         <li>
-          <h3 className="font-bold">其他课程范例： </h3>
+          <h3 className="font-bold">其他课程范例：Other Training Courses </h3>
           金融从业领域的GPU全日工坊 频率论和贝叶斯统计推断
           随机滤波、马尔可夫链蒙特卡洛及其应用 应用于数据的火箭科学式处理方法
           使用 KDB+/Q 的大数据和高频数据等
