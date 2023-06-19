@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 type Props = {
@@ -6,34 +8,62 @@ type Props = {
 
 const MobileNavigation = (isTabletWidth: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const selectedPath = (path: string): boolean => {
+    console.log(pathname === path);
+    return pathname === path;
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div className="hamburger-navigation">
+    <div className="hamburger-navigation ">
       <div
         className={`menu-icon ${isOpen && isTabletWidth ? 'open' : ''}`}
         onClick={toggleMenu}
       >
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+        <div className="bar bg-cyan-600"></div>
+        <div className="bar bg-cyan-600"></div>
+        <div className="bar bg-cyan-600"></div>
       </div>
       <ul className={`menu ${isOpen && isTabletWidth ? 'open' : ''}`}>
-        <li>
-          <a href="#">Link 1</a>
-        </li>
-        <li>
-          <a href="#">Link 2</a>
-        </li>
-        <li>
-          <a href="#">Link 3</a>
-        </li>
-        <li>
-          <a href="#">Link 4</a>
-        </li>
+        <Link href="/" onClick={closeMenu}>
+          <div
+            className={
+              'nav-link-mobile hover:text-amber-300 ' +
+              (selectedPath('/') ? 'text-amber-300' : 'text-cyan-600')
+            }
+          >
+            主页 Home
+          </div>
+        </Link>
+        <Link href="/about" onClick={closeMenu}>
+          <div
+            className={
+              'nav-link-mobile hover:text-amber-300 ' +
+              (selectedPath('/about') ? 'text-amber-300' : 'text-cyan-600')
+            }
+          >
+            关于 About
+          </div>
+        </Link>
+        <Link href="/teaching" onClick={closeMenu}>
+          <div
+            className={
+              'nav-link-mobile hover:text-amber-300 ' +
+              (selectedPath('/teaching') ? 'text-amber-300' : 'text-cyan-600')
+            }
+          >
+            教学 Teach
+          </div>
+        </Link>
       </ul>
     </div>
   );

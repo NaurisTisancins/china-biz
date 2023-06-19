@@ -6,7 +6,7 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  color: rgb(45, 45, 49);
+  color: rgba(45, 45, 49, 0.9);
   background-color: rgb(241 245 249);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -16,14 +16,23 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-/* need to change title to be on the left side */
+
+.primary-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  width: 100%;
+  margin: 32px 0;
+}
 .secondary-title-1 {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 24px;
+  margin: 32px 0;
   width: 100%;
 }
 
@@ -34,7 +43,7 @@ body::-webkit-scrollbar {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 24px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .secondary-title-2-left {
@@ -59,6 +68,8 @@ body::-webkit-scrollbar {
   width: 100%;
   margin-bottom: 64px;
   margin-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .home-page-container {
@@ -233,6 +244,13 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.nav-link-mobile {
+  font-weight: 800;
+  font-size: 48px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .footer-container {
   width: 100%;
   height: 60px;
@@ -248,11 +266,12 @@ body::-webkit-scrollbar {
 
 .about-thalesians-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 16px;
-  height: 600px;
+  height: 100%;
   padding: 0 16px;
+  margin: 80px 0;
 }
 
 .about-paragraph-container {
@@ -261,7 +280,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   flex-direction: column;
   width: 55%;
-  gap: 16px; 
+  gap: 16px;
 }
 
 .about-thalesians-paragraph {
@@ -271,12 +290,12 @@ body::-webkit-scrollbar {
 }
 
 .about-thalesians-img {
-  background: red;
   width: 40%;
   height: 50%;
 }
 
 .about-page-quote-section {
+  margin: 64px 0;
 }
 
 .quote-paragraph {
@@ -313,6 +332,11 @@ body::-webkit-scrollbar {
   height: 100%;
   width: 100%;
 }
+
+.about-key-people-image {
+  width: 300px;
+}
+
 .key-person-container {
   width: 65%;
   height: 100%;
@@ -384,6 +408,10 @@ body::-webkit-scrollbar {
 }
 
 .unordered-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
   margin-bottom: 24px;
   width: 100%;
   padding: 0 16px;
@@ -400,29 +428,44 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: fill;
+  min-width: 300px;
 }
 
 /* Mobile Nav */
-.hamburger-navigation {
-  /* position: relative; */
-}
-
 .menu-icon {
+  position: relative;
+  transition: transform 0.3s ease;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3px;
-  width: 24px;
-  height: 18px;
+  align-items: center;
+  gap: 7px;
+  width: 40px;
+  height: 100%;
   position: relative;
   z-index: 1;
 }
 
 .bar {
-  width: 100%;
+  width: 40px;
   height: 5px;
-  background-color: #333;
+  border-radius: 1.5px;
+}
+
+.menu-icon.open .bar:first-child {
+  -webkit-transform: translateY(12px) rotate(45deg);
+  -ms-transform: translateY(12px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg);
+}
+.menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon.open .bar:last-child {
+  -webkit-transform: translateY(-12px) rotate(-45deg);
+  -ms-transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .menu {
@@ -431,8 +474,8 @@ body::-webkit-scrollbar {
   right: 0;
   min-width: 100vw;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
   padding: 10px;
   display: none;
 }
@@ -442,12 +485,6 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.menu li {
-  display: flex;
-  width: 100%;
-  margin-bottom: 10px;
 }
 
 .menu a {
@@ -460,7 +497,7 @@ body::-webkit-scrollbar {
 }
 
 .menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* 320-480 mob */
@@ -502,5 +539,23 @@ body::-webkit-scrollbar {
 
   .selected-clients-container {
     justify-content: start;
+  }
+
+  .about-thalesians-container {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-thalesians-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-paragraph-container {
+    width: 100%;
   }
 }

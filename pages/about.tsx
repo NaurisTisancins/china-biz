@@ -9,6 +9,7 @@ import ClientsSection from '@/components/about-page-components/ClientsSection';
 const AboutPage: NextPageWithLayout = () => {
   return (
     <main className="about-page-container">
+      <h1 className="primary-title">About Thalesians</h1>
       <AboutThalesians />
       <Quote />
       <KeyPeopleSection />

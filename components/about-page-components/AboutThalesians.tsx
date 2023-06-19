@@ -1,7 +1,18 @@
+import Image from 'next/image';
+import { useTabletWidth } from '../../hooks/screenHooks';
+
 function AboutThalesians() {
   return (
     <section className="about-thalesians-container">
-      <div className="about-thalesians-img">This is a picture</div>
+      <div className="about-thalesians-img">
+        <Image
+          className="w-full pb-16"
+          src="/../public/photos/jan-novotny-teaching-1.jpg"
+          width={500}
+          height={500}
+          alt="Picture of the author"
+        />
+      </div>
       <div className="about-paragraph-container">
         <h2 className="about-thalesians-paragraph">
           The Thalesians 泰勒斯人 由Paul Bilokon，Matthew Dixon和Saeed
