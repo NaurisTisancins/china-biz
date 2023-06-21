@@ -15,8 +15,8 @@ function NavigationBarLinks() {
       <Link href="/">
         <div
           className={
-            'nav-link hover:text-amber-300 ' +
-            (selectedPath('/') ? 'text-amber-300' : 'text-cyan-600')
+            'nav-link hover:text-amber-400 ' +
+            (selectedPath('/') ? 'text-amber-400' : 'text-cyan-600')
           }
         >
           主页 Home
@@ -25,8 +25,8 @@ function NavigationBarLinks() {
       <Link href="/about">
         <div
           className={
-            'nav-link hover:text-amber-300 ' +
-            (selectedPath('/about') ? 'text-amber-300' : 'text-cyan-600')
+            'nav-link hover:text-amber-400 ' +
+            (selectedPath('/about') ? 'text-amber-400' : 'text-cyan-600')
           }
         >
           关于 About
@@ -35,8 +35,8 @@ function NavigationBarLinks() {
       <Link href="/teaching">
         <div
           className={
-            'nav-link hover:text-amber-300 ' +
-            (selectedPath('/teaching') ? 'text-amber-300' : 'text-cyan-600')
+            'nav-link hover:text-amber-400 ' +
+            (selectedPath('/teaching') ? 'text-amber-400' : 'text-cyan-600')
           }
         >
           教学 Teach
@@ -45,8 +45,8 @@ function NavigationBarLinks() {
       <Link href="/consulting">
         <div
           className={
-            'nav-link hover:text-amber-300 ' +
-            (selectedPath('/consulting') ? 'text-amber-300' : 'text-cyan-600')
+            'nav-link hover:text-amber-400 ' +
+            (selectedPath('/consulting') ? 'text-amber-400' : 'text-cyan-600')
           }
         >
           咨询 Consult
@@ -55,8 +55,8 @@ function NavigationBarLinks() {
       {/* <Link href="/software">
         <div
           className={
-            'nav-link hover:text-amber-300 ' +
-            (selectedPath('/') ? 'text-amber-300' : 'text-cyan-600')
+            'nav-link hover:text-amber-400 ' +
+            (selectedPath('/') ? 'text-amber-400' : 'text-cyan-600')
           }
         >
           Software

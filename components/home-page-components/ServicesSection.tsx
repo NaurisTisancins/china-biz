@@ -1,37 +1,47 @@
 import Link from 'next/link';
 
 import Computer from '../icons/Computer';
+import Education from '../icons/Education';
+import Handshake from '../icons/Handshake';
 
 function ServicesSection() {
   return (
     <section className="services-section ">
-      <div className="service-item ">
-        <Link href="/teaching">
-          <h2 className="service-title text-cyan-600 hover:text-amber-300">
-            教学 Teaching
-          </h2>
-        </Link>
-
-        <p className="service-text">科技最新动态</p>
-      </div>
-      <div className="service-item ">
-        <Link href="/consulting">
-          <h2 className="service-title text-cyan-600 hover:text-amber-300">
-            咨询 Consulting
-          </h2>
-        </Link>
-        <p className="service-text">为行业领导者带来最先进的专业知识</p>
-      </div>
-      <div className="service-item ">
-        <div className="service-icon-container"></div>
-        {/* <Image src={LaptopIcon} alt="laptop icon" width={50} height={50} /> */}
-        <Computer color="#0891B2" width="50px" height="50px" />
-        <h2 className="service-title text-cyan-600 hover:text-amber-300">
-          软件
-          <span>Software</span>
+      <Link
+        className="service-item fill-cyan-600 text-cyan-600 hover:text-amber-400 hover:fill-amber-400"
+        href="/teaching"
+      >
+        <Education width="54px" height="54px" />
+        <h2 className="service-title ">
+          教学 <span>Teaching</span>
         </h2>
+        <p className="service-text">科技最新动态</p>
+      </Link>
 
-        <p className="service-text">构建独特的软件解决方案</p>
+      <Link
+        className="service-item fill-cyan-600 text-cyan-600 hover:text-amber-400 hover:fill-amber-400"
+        href="/consulting"
+      >
+        <Handshake width="50px" height="50px" />
+        <h2 className="service-title">
+          咨询 <span>Consulting</span>
+        </h2>
+        <p className="service-text">为行业领导者带来最先进的专业知识</p>
+      </Link>
+
+      <div className="service-item ">
+        <Link
+          className="service-item fill-cyan-600 text-cyan-600 hover:text-amber-400 hover:fill-amber-400"
+          href="/consulting"
+        >
+          <Computer width="50px" height="50px" />
+          <h2 className="service-title">
+            软件
+            <span>Software</span>
+          </h2>
+
+          <p className="service-text">构建独特的软件解决方案</p>
+        </Link>
       </div>
     </section>
   );

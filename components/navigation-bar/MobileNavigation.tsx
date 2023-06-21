@@ -37,8 +37,8 @@ const MobileNavigation = (isTabletWidth: Props) => {
         <Link href="/" onClick={closeMenu}>
           <div
             className={
-              'nav-link-mobile hover:text-amber-300 ' +
-              (selectedPath('/') ? 'text-amber-300' : 'text-cyan-600')
+              'nav-link-mobile hover:text-amber-400 ' +
+              (selectedPath('/') ? 'text-amber-400' : 'text-cyan-600')
             }
           >
             主页 Home
@@ -47,8 +47,8 @@ const MobileNavigation = (isTabletWidth: Props) => {
         <Link href="/about" onClick={closeMenu}>
           <div
             className={
-              'nav-link-mobile hover:text-amber-300 ' +
-              (selectedPath('/about') ? 'text-amber-300' : 'text-cyan-600')
+              'nav-link-mobile hover:text-amber-400 ' +
+              (selectedPath('/about') ? 'text-amber-400' : 'text-cyan-600')
             }
           >
             关于 About
@@ -57,8 +57,8 @@ const MobileNavigation = (isTabletWidth: Props) => {
         <Link href="/teaching" onClick={closeMenu}>
           <div
             className={
-              'nav-link-mobile hover:text-amber-300 ' +
-              (selectedPath('/teaching') ? 'text-amber-300' : 'text-cyan-600')
+              'nav-link-mobile hover:text-amber-400 ' +
+              (selectedPath('/teaching') ? 'text-amber-400' : 'text-cyan-600')
             }
           >
             教学 Teach

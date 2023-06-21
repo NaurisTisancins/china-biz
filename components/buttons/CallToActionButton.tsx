@@ -8,7 +8,7 @@ type Props = {
 function CallToActionButton({ text, path }: Props) {
   return (
     <Link
-      className="call-to-action-btn bg-cyan-600 text-white font-semibold rounded hover:bg-amber-300"
+      className="call-to-action-btn bg-cyan-600 text-white font-semibold rounded hover:bg-amber-400"
       href={path}
     >
       {text}

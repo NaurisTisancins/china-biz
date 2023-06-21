@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import PaulBilokonImage from '../../public/photos/image5.jpeg';
+import PaulBilokonImage from '../../public/photos/pictures/Main_site_pics/paul-bilokon-1.jpg';
 import SaeedImage from '../../public/photos/pictures/team_pics/saeed_amen.jpg';
 import MatthewDixonImage from '../../public/photos/pictures/team_pics/Matthew_Dixon.jpg';
 import MonaZhangImage from '../../public/photos/mona.jpg';
