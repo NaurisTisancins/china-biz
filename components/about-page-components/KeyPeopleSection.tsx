@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import PaulBilokonImage from '../../public/photos/image5.jpeg';
-import SaeedImage from '../../public/photos/saeed-amen.jpg';
-import MatthewDixonImage from '../../public/photos/matthew-dixon-140.jpeg';
+import SaeedImage from '../../public/photos/pictures/team_pics/saeed_amen.jpg';
+import MatthewDixonImage from '../../public/photos/pictures/team_pics/Matthew_Dixon.jpg';
 import MonaZhangImage from '../../public/photos/mona.jpg';
 
 import { useTabletWidth } from '@/hooks/screenHooks';

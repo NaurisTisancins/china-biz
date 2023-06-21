@@ -1,12 +1,9 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
-import LaptopIcon from '../../public/icons/laptop-icon.svg';
 import Computer from '../icons/Computer';
 
 function ServicesSection() {
   return (
-    // add icons
     <section className="services-section ">
       <div className="service-item ">
         <Link href="/teaching">
