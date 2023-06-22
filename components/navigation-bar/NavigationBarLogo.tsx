@@ -5,7 +5,8 @@ import Link from 'next/link';
 function NavigationBarLogo() {
   return (
     <Link href="/" className="nav-bar-logo-container">
-      <Image src={ThalesiansLogo} alt="company logo" width={90} height={90} />
+      <Image src={ThalesiansLogo} alt="company logo" width={50} height={50} />{' '}
+      <h2 className="nav-logo-thalesians">Thalesians</h2>
     </Link>
   );
 }

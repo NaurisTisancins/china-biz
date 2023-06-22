@@ -86,7 +86,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   width: 100%;
   min-height: 600px;
-  margin: 64px 0px;
+  margin-bottom: 64px;
   background: url('../public/photos/pictures/sample_stock_pics/istockphoto-619651214-1024x1024.jpg');
   /* background-size: 100%; */
   background-size: cover;
@@ -233,6 +233,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   width: 100%;
   height: 100px;
+  box-shadow: 0px 11px 8px -10px #ccc, 0px -11px 8px -10px #ccc;
 }
 
 .nav-bar-content-container {
@@ -245,7 +246,19 @@ body::-webkit-scrollbar {
 }
 
 .nav-bar-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  gap: 8px;
+}
+.nav-logo-thalesians {
+  display: flex;
+  align-self: flex-end;
+  font-size: 32px;
+  font-weight: bold;
+  height: 50px;
+  color: #0891b2;
 }
 
 .nav-link-container {
@@ -267,10 +280,46 @@ body::-webkit-scrollbar {
 }
 
 .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 60px;
+  gap: 16px;
   margin-bottom: 0px;
-  background-color: red;
+  margin-top: 64px;
+  padding: 24px 16px;
+  box-shadow: 0px 11px 8px -10px #ccc, 0px -11px 8px -10px #ccc;
+  font-size: 14px;
+}
+
+.footer-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.footer-links-section-1,
+.footer-links-section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-links-section-2 {
+  align-items: flex-end;
+}
+
+.footer-link,
+.footer-address {
+  color: #767676;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 .about-page-container {
