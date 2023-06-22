@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useTabletWidth } from '../../hooks/screenHooks';
+import JanNovotnyImage from '../../public/photos/pictures/Main_site_pics/jan-novotny-teaching-1.jpg';
 
 function AboutThalesians() {
   return (
@@ -7,7 +7,7 @@ function AboutThalesians() {
       <div className="about-thalesians-img">
         <Image
           className="w-full pb-16"
-          src="/../public/photos/jan-novotny-teaching-1.jpg"
+          src={JanNovotnyImage}
           width={500}
           height={500}
           alt="Picture of the author"

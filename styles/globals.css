@@ -88,7 +88,9 @@ body::-webkit-scrollbar {
   min-height: 600px;
   margin: 64px 0px;
   background: url('../public/photos/pictures/sample_stock_pics/istockphoto-619651214-1024x1024.jpg');
-  background-size: 100%;
+  /* background-size: 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.5);
   color: whitesmoke;
 }
@@ -314,7 +316,7 @@ body::-webkit-scrollbar {
 .quote-paragraph {
   width: 60%;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .about-page-key-people-section {
