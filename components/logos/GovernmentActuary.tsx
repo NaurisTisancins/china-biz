@@ -15,11 +15,11 @@ export function GovernmentActuary(props: Props) {
       viewBox="3.7 128.1 485.3 416.6"
       width={props.width}
       height={props.height}
-      enable-background="new 3.7 128.1 485.3 416.6"
+      enableBackground="new 3.7 128.1 485.3 416.6"
       xmlSpace="preserve"
     >
       <rect x="3.7" y="128.1" fill="#AD2B31" width="6.9" height="401.4" />
-      <g enable-background="new    ">
+      <g enableBackground="new    ">
         <path
           d="M80,331.6c-3.4,1.3-6.8,2-10.2,2c-4.4,0-8.3-0.8-11.7-2.4c-3.4-1.6-6.4-3.8-8.8-6.5c-2.4-2.7-4.2-5.9-5.5-9.4
 		c-1.3-3.5-1.9-7.2-1.9-11c0-4.3,0.6-8.3,1.8-12.1c1.2-3.8,2.9-7.2,5.2-10.1c2.3-2.9,5.2-5.2,8.7-6.9c3.5-1.7,7.5-2.6,12.1-2.6
@@ -84,7 +84,7 @@ export function GovernmentActuary(props: Props) {
 		V290H489z"
         />
       </g>
-      <g enable-background="new    ">
+      <g enableBackground="new    ">
         <path d="M69.3,372l22.8,58.4h-8.6l-6.4-17.6H52.5l-6.5,17.6H38L60.7,372H69.3z M74.7,406.3L65,379h-0.2l-9.9,27.2H74.7z" />
         <path
           d="M122,395.5c-1.7-1.5-4.1-2.2-7-2.2c-2.5,0-4.6,0.5-6.3,1.4c-1.7,0.9-3,2.2-4,3.7c-1,1.5-1.7,3.3-2.2,5.3
@@ -142,7 +142,7 @@ export function GovernmentActuary(props: Props) {
 		C344.9,418.6,345.3,419.9,345.9,420.9z"
         />
       </g>
-      <g enable-background="new    ">
+      <g enableBackground="new    ">
         <path
           d="M64.9,470.2c9,0,15.9,2.3,20.8,6.9c4.9,4.6,7.3,11.6,7.3,20.9c0,4.9-0.5,9.3-1.6,13c-1.1,3.8-2.8,7-5.1,9.6
 		c-2.3,2.6-5.2,4.6-8.8,5.9c-3.5,1.4-7.7,2-12.6,2h-20v-58.4H64.9z M65.6,522c0.9,0,2-0.1,3.3-0.2c1.3-0.1,2.7-0.5,4.2-1

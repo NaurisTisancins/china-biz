@@ -6,7 +6,6 @@ function NavigationBarLinks() {
   const pathname = usePathname();
 
   const selectedPath = (path: string): boolean => {
-    console.log(pathname === path);
     return pathname === path;
   };
 
@@ -42,14 +41,14 @@ function NavigationBarLinks() {
           教学 Teach
         </div>
       </Link>
-      <Link href="/consulting">
+      <Link href="/contact">
         <div
           className={
             'nav-link hover:text-amber-400 ' +
-            (selectedPath('/consulting') ? 'text-amber-400' : 'text-cyan-600')
+            (selectedPath('/contact') ? 'text-amber-400' : 'text-cyan-600')
           }
         >
-          咨询 Consult
+          接触 Contact
         </div>
       </Link>
       {/* <Link href="/software">

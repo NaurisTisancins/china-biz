@@ -5,7 +5,7 @@ function Footer() {
     <section className="footer-container">
       <div className="footer-links-container">
         <div className="footer-links-section-1">
-          <Link href="/" className="footer-link">
+          <Link href="/contact" className="footer-link">
             Contact us
           </Link>
           <Link href="https://thalesians.com" className="footer-link">

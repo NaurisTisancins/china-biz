@@ -11,7 +11,6 @@ const MobileNavigation = (isTabletWidth: Props) => {
   const pathname = usePathname();
 
   const selectedPath = (path: string): boolean => {
-    console.log(pathname === path);
     return pathname === path;
   };
 

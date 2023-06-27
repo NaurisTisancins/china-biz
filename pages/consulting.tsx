@@ -8,9 +8,6 @@ import ContactUsSection from '@/components/common-components/ContactUsSection';
 
 const inter = Inter({ subsets: ['latin'] });
 
-
-//remove english text - Mona will create chinese titles 
-
 const ConsultingPage: NextPageWithLayout = () => {
   return (
     <main className="consulting-page-container">

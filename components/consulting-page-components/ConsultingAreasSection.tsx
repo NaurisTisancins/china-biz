@@ -34,12 +34,12 @@ function ConsultingAreasSection() {
       </ul>
       <h2 className="secondary-title-2">ARTIFICIAL INTELLIGENCE</h2>
       <h3 className="secondary-title-2-left">人工智能</h3>
-      <p className="paragraph">
+      {/* <p className="paragraph">
         人工智能 (AI) 最初​​由约翰·麦卡锡 (John McCarthy)
         定义为“制造智能机器，尤其是智能计算机程序的科学与工程”。早期的人工智能研究人员设定了很高的目标：他们旨在重建人类智能。
         在 20 世纪 50 年代和 60
         年代，这一承诺未能实现。或许是因为目标不仅高，而且不断变化：当机器学会做某事与人类一样好或更好时，人们就不再将其称为“AI”。
-      </p>
+      </p> */}
       <ul>
         -machine learning - LINEAR REGRESSION AND ENSEMBLE METHODS - NEURAL
         NETWORKS - REINFORCEMENT LEARNING

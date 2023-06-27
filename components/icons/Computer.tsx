@@ -16,9 +16,9 @@ function Computer({ width = '24px', height = '16px', color }: Props) {
       <g
         id="Icons"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="Rounded" transform="translate(-202.000000, -2462.000000)">
           <g id="Hardware" transform="translate(100.000000, 2404.000000)">

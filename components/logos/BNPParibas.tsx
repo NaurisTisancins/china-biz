@@ -20,9 +20,9 @@ export function BNPParibas(props: Props) {
           y2="-24.084"
           xlinkHref="#G"
         >
-          <stop offset="0" stop-color="#00774a" />
-          <stop offset=".6" stop-color="#8ccaae" />
-          <stop offset="1" stop-color="#00975f" />
+          <stop offset="0" stopColor="#00774a" />
+          <stop offset=".6" stopColor="#8ccaae" />
+          <stop offset="1" stopColor="#00975f" />
         </linearGradient>
         <linearGradient
           id="B"
@@ -32,14 +32,14 @@ export function BNPParibas(props: Props) {
           y2="-19.857"
           xlinkHref="#G"
         >
-          <stop offset="0" stop-color="#00975f" />
-          <stop offset=".3" stop-color="#8ccaae" />
-          <stop offset=".55" stop-color="#00975f" />
-          <stop offset=".835" stop-color="#00774a" />
-          <stop offset=".869" stop-color="#007c4e" />
-          <stop offset=".924" stop-color="#00895a" />
-          <stop offset=".994" stop-color="#009e6e" />
-          <stop offset="1" stop-color="#00a070" />
+          <stop offset="0" stopColor="#00975f" />
+          <stop offset=".3" stopColor="#8ccaae" />
+          <stop offset=".55" stopColor="#00975f" />
+          <stop offset=".835" stopColor="#00774a" />
+          <stop offset=".869" stopColor="#007c4e" />
+          <stop offset=".924" stopColor="#00895a" />
+          <stop offset=".994" stopColor="#009e6e" />
+          <stop offset="1" stopColor="#00a070" />
         </linearGradient>
         <linearGradient
           id="C"
@@ -49,8 +49,8 @@ export function BNPParibas(props: Props) {
           y2="17.93"
           xlinkHref="#G"
         >
-          <stop offset="0" stop-color="#00a97c" />
-          <stop offset="1" stop-color="#00975f" />
+          <stop offset="0" stopColor="#00a97c" />
+          <stop offset="1" stopColor="#00975f" />
         </linearGradient>
         <linearGradient
           id="D"
@@ -60,8 +60,8 @@ export function BNPParibas(props: Props) {
           y2="17.938"
           xlinkHref="#G"
         >
-          <stop offset="0" stop-color="#00a97c" />
-          <stop offset="1" stop-color="#00975f" />
+          <stop offset="0" stopColor="#00a97c" />
+          <stop offset="1" stopColor="#00975f" />
         </linearGradient>
         <linearGradient
           id="E"
@@ -71,8 +71,8 @@ export function BNPParibas(props: Props) {
           y2="17.925"
           xlinkHref="#G"
         >
-          <stop offset="0" stop-color="#00a97c" />
-          <stop offset="1" stop-color="#00975f" />
+          <stop offset="0" stopColor="#00a97c" />
+          <stop offset="1" stopColor="#00975f" />
         </linearGradient>
         <linearGradient
           id="F"
@@ -82,8 +82,8 @@ export function BNPParibas(props: Props) {
           y2="17.924"
           xlinkHref="#G"
         >
-          <stop offset="0" stop-color="#00a97c" />
-          <stop offset="1" stop-color="#00975f" />
+          <stop offset="0" stopColor="#00a97c" />
+          <stop offset="1" stopColor="#00975f" />
         </linearGradient>
         <linearGradient id="G" gradientUnits="userSpaceOnUse" />
       </defs>
