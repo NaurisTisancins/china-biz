@@ -43,34 +43,40 @@ function ContactForm() {
     <div className="contact-us-container">
       <h1 className="secondary-title-1">Contact Us</h1>
       <form className="contact-form" onSubmit={onSubmit}>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="text"
-          name="email_from"
-          value={state.email}
-          id="email"
-          className="email_from"
-          placeholder="email@example.com"
-          onChange={onFieldChange}
-        />
-        <label htmlFor="email">Full Name:</label>
-        <input
-          type="text"
-          name="name_from"
-          value={state.name}
-          id="name"
-          className="name_from"
-          placeholder="John Doe"
-          onChange={onFieldChange}
-        />
-        <label htmlFor="message">Message:</label>
-        <textarea
-          name="message"
-          value={state.message}
-          id="message"
-          className="message_box"
-          onChange={onFieldChange}
-        ></textarea>
+        <div className="input-field-container flex flex-col">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="text"
+            name="email_from"
+            value={state.email}
+            id="email"
+            className="email_from"
+            placeholder="email@example.com"
+            onChange={onFieldChange}
+          />
+        </div>
+        <div className="input-field-container flex flex-col">
+          <label htmlFor="email">Full Name:</label>
+          <input
+            type="text"
+            name="name_from"
+            value={state.name}
+            id="name"
+            className="name_from"
+            placeholder="John Doe"
+            onChange={onFieldChange}
+          />
+        </div>
+        <div className="input-field-container flex flex-col">
+          <label htmlFor="message">Message:</label>
+          <textarea
+            name="message"
+            value={state.message}
+            id="message"
+            className="message_box"
+            onChange={onFieldChange}
+          ></textarea>
+        </div>
         <SubmitButton text="Send" />
       </form>
     </div>

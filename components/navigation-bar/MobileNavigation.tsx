@@ -63,6 +63,17 @@ const MobileNavigation = (isTabletWidth: Props) => {
             教学 Teach
           </div>
         </Link>
+
+        <Link href="/contact" onClick={closeMenu}>
+          <div
+            className={
+              'nav-link-mobile hover:text-amber-400 ' +
+              (selectedPath('/contact') ? 'text-amber-400' : 'text-cyan-600')
+            }
+          >
+            接触 Contact
+          </div>
+        </Link>
       </ul>
     </div>
   );
