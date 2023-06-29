@@ -89,7 +89,6 @@ function AdultTrainingSection() {
           </div>
         </li>
       </ul>
-      泰勒斯人-人工智能机器学习类课程范例(成人学习/培训)：
     </section>
   );
 }
