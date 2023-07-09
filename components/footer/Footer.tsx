@@ -3,7 +3,7 @@ import Link from 'next/link';
 function Footer() {
   return (
     <section className="footer-container">
-      <div className="footer-links-container">
+      <div className="footer-links-container gap-4">
         <div className="footer-links-section-1">
           <Link href="/contact" className="footer-link">
             Contact us
@@ -15,7 +15,7 @@ function Footer() {
 
         <div className="footer-links-section-2">
           <p className="footer-address">Shanghai address</p>
-          <p className="footer-address">
+          <p className="footer-address flex flex-col justify-end align-center flex-wrap">
             One Canada Square, Canary Wharf, London E14 5AB
           </p>
         </div>

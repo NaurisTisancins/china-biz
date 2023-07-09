@@ -23,7 +23,7 @@ function ServicesSection() {
         href="/consulting"
       >
         <Handshake width="50px" height="50px" />
-        <h2 className="service-title">
+        <h2 className="service-title ">
           咨询 <span>Consulting</span>
         </h2>
         <p className="service-text">为行业领导者带来最先进的专业知识</p>

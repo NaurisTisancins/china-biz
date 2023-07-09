@@ -11,6 +11,8 @@ function ContactForm() {
     message: '',
   });
 
+  const [success, setSuccess] = useState(false);
+
   const onFieldChange = (event: any) => {
     let value = event.target.value;
     if (event.target.type === 'checkbox') {
@@ -21,11 +23,18 @@ function ContactForm() {
   };
 
   function sendEmail(form: HTMLFormElement) {
-    emailjs.sendForm(
-      process.env.EMAIL_SERVICE_ID as string,
-      process.env.EMAIL_TEMPLATE_ID as string,
-      form,
-      process.env.EMAIL_PUBLIC_KEY
+    return (
+      emailjs
+        .sendForm(
+          process.env.EMAIL_SERVICE_ID as string,
+          process.env.EMAIL_TEMPLATE_ID as string,
+          form,
+          process.env.EMAIL_PUBLIC_KEY
+        )
+        .then((response) =>
+          response.status === 200 ? setSuccess(true) : setSuccess(false)
+        ),
+      (error: { text: any }) => console.log(error.text)
     );
   }
 
@@ -78,6 +87,11 @@ function ContactForm() {
           ></textarea>
         </div>
         <SubmitButton text="Send" />
+        {success === true && (
+          <div className="success-message border-2 rounded-lg border-green-200 bg-green-50 text-green-500">
+            Email sent successfully
+          </div>
+        )}
       </form>
     </div>
   );
