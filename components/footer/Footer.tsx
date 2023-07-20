@@ -14,8 +14,10 @@ function Footer() {
         </div>
 
         <div className="footer-links-section-2">
-          <p className="footer-address">Shanghai address</p>
-          <p className="footer-address flex flex-col justify-end align-center flex-wrap">
+          <p className="footer-address flex flex-col justify-end align-center flex-wrap border-b-zinc-200 border-b-2">
+            Office 33-126, Shinmay Union Square, Shanghai, China
+          </p>
+          <p className="footer-address flex flex-col justify-end align-center flex-wrap border-b-zinc-200 border-b-2">
             One Canada Square, Canary Wharf, London E14 5AB
           </p>
         </div>
