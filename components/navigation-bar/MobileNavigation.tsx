@@ -71,7 +71,7 @@ const MobileNavigation = (isTabletWidth: Props) => {
               (selectedPath('/contact') ? 'text-amber-400' : 'text-cyan-600')
             }
           >
-            接触 Contact
+            联系 Contact
           </div>
         </Link>
       </ul>
