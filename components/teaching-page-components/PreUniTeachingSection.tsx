@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import AISummercampImage from '../../public/photos/pictures/Main_site_pics/ai-summer-camp.png';
+import Link from 'next/link';
 
 function PreUniTeachingSection() {
   return (
@@ -19,15 +20,21 @@ function PreUniTeachingSection() {
               泰勒斯人 人工智能夏季学院/ Thalesians Artificial Intelligence
               Summer Institute ：
             </h3>
-            泰勒斯人X帝国理工人工智能量化夏令营 （link to brochures ENG/CHN）
+            泰勒斯人X帝国理工人工智能量化夏令营
+            {/* （link to brochures ENG/CHN） */}
           </p>
           <p>
             *Thelesians X Imperial College AI and quant finance Summer Camps
-            (link to brochure) ENG
+            {/* (link to brochure) ENG */}
           </p>
           <p>
-            (CHN/EN)/QA/company intro (full pdf that can be
-            downloaded)/Application form(contact us to get)
+            (CHN/EN)/QA/company intro{' '}
+            <Link
+              href="/contact"
+              className="text-cyan-600 hover:text-amber-400"
+            >
+              Contact us to get the PDF
+            </Link>
           </p>
         </div>
       </div>
