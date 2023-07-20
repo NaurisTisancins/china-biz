@@ -113,6 +113,13 @@ function AdultTrainingSection() {
             <h3 className="font-bold mb-2">
               Oxford Summer AI School (CHN content)
             </h3>
+
+            <p className="pb-2">
+              金融从业领域的GPU全日工坊 频率论和贝叶斯统计推断
+              随机滤波、马尔可夫链蒙特卡洛及其应用
+              应用于数据的火箭科学式处理方法 使用 KDB+/Q 的大数据和高频数据等
+            </p>
+
             <p>
               The Imperial College London X Thalesians UK AI summer camp is
               specially designed for students aged 12-18, who will have the
@@ -131,12 +138,9 @@ function AdultTrainingSection() {
         <li className="adult-training-list-item mb-16 flex">
           {/* <Image src={MLILogo} alt="MLI logo" width={200} height={200} /> */}
           <div className="p-2">
-            <h3 className="font-bold mb-2">
+            {/* <h3 className="font-bold mb-2">
               过往机构培训名单 （链接主要客户）
-            </h3>
-            “我们定期在牛津举办的ML和AI成人暑期学校,
-            吸引了来自各行各业的众多行业领导者。我们是最早参加ML /
-            AI革命的人之一，从而突破了教学，研究和开发的界限。“
+            </h3> */}
           </div>
         </li>
       </ul>
