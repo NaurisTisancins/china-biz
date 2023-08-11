@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   env: {
     EMAIL_SERVICE_ID: 'service_gx519rn',
-    EMAIL_TEMPLATE_ID: 'template_irj6a5o',
+    EMAIL_TEMPLATE_ID: 'template_bwih3jm',
     EMAIL_PUBLIC_KEY: 'qBKIDrEJ4wb5gm_YR',
   },
 };
