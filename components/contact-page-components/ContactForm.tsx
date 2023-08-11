@@ -12,6 +12,7 @@ function ContactForm() {
   });
 
   const [success, setSuccess] = useState(false);
+  const [emailError, setEmailError] = useState(false);
 
   const onFieldChange = (event: any) => {
     let value = event.target.value;
@@ -23,18 +24,22 @@ function ContactForm() {
   };
 
   function sendEmail(form: HTMLFormElement) {
+    console.log(process.env.EMAIL_TEMPLATE_ID);
     return (
       emailjs
         .sendForm(
           process.env.EMAIL_SERVICE_ID as string,
           process.env.EMAIL_TEMPLATE_ID as string,
+
           form,
           process.env.EMAIL_PUBLIC_KEY
         )
         .then((response) =>
-          response.status === 200 ? setSuccess(true) : setSuccess(false)
+          response.status === 200
+            ? setSuccess(true)
+            : response.status === 400 && setEmailError(true)
         ),
-      (error: { text: any }) => console.log(error.text)
+      (error: { text: any }) => console.log(error)
     );
   }
 
@@ -87,10 +92,16 @@ function ContactForm() {
           ></textarea>
         </div>
         <SubmitButton text="Send" />
-        {success === true && (
+        {success === true ? (
           <div className="success-message border-2 rounded-lg border-green-200 bg-green-50 text-green-500">
             Email sent successfully
           </div>
+        ) : (
+          emailError === true && (
+            <div className="success-message border-2 rounded-lg border-red-200 bg-red-50 text-red-500">
+              Email not sent Error
+            </div>
+          )
         )}
       </form>
     </div>
